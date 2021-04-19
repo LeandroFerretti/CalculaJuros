@@ -15,8 +15,6 @@ namespace CalculaJuros.Servico
 
         public string CalcularJuros(decimal valorInicial, int meses)
         {
-            //Queria retornar um decimal mas o resultado estava cortando o '0' da ultima casa.
-            //Retornei string para ficar igual o pedido na tarefa.
             var juros = _taxaJurosApi.RetornaTaxaJuros().Result;
             if (!ValidadarCalculoJuros(valorInicial, meses, out string mensagemErro))
                 throw new ArgumentException(mensagemErro);

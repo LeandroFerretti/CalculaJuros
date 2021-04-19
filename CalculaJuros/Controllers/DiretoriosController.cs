@@ -1,22 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace CalculaJuros.Controllers
 {
     [ApiController]
     public class DiretoriosController : ControllerBase
     {
-        public DiretoriosController()
+        private readonly IConfiguration _configuration;
+
+        public DiretoriosController(IConfiguration configuration)
         {
+            _configuration = configuration;
         }
 
         [HttpGet("busca-caminho-projeto-git")]
         public ActionResult<string[]> BuscarCaminhoDoProjetoNoGit()
         {
-            string[] urls = {
-                "Url do git projeto TaxaJuros: https://github.com/LeandroFerretti/TaxaJuros",
-                "Url do git projeto CalculaJuros: https://github.com/LeandroFerretti/CalculaJuros"
-            };
-            return urls;
+            return _configuration.GetSection("UrlsGihHub").Get<string[]>();
         }
     }
 }
