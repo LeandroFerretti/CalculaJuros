@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Teste Unitario", "4 - T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - ConexoesApi", "3 - ConexoesApi", "{E25EAE9A-0666-436F-925D-AE48CA14D9E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConexoesApi", "ConexoesApi\ConexoesApi.csproj", "{F53B79A1-6604-4EE8-8FC7-CE281F265068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConexoesApi", "ConexoesApi\ConexoesApi.csproj", "{F53B79A1-6604-4EE8-8FC7-CE281F265068}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{25F2E8FA-BED4-4FF8-AC59-219B9845E603}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{F53B79A1-6604-4EE8-8FC7-CE281F265068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F53B79A1-6604-4EE8-8FC7-CE281F265068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F53B79A1-6604-4EE8-8FC7-CE281F265068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F2E8FA-BED4-4FF8-AC59-219B9845E603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F2E8FA-BED4-4FF8-AC59-219B9845E603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F2E8FA-BED4-4FF8-AC59-219B9845E603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F2E8FA-BED4-4FF8-AC59-219B9845E603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  calculajuros:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:81
+    ports:
+      - "8090:81"
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+    networks:
+      - backend
+networks:
+  backend:
